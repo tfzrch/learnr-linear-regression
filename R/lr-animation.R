@@ -13,6 +13,9 @@ list.files(
 ) %>% 
   walk(source, .GlobalEnv)
 
+# Theme
+theme_set(ggtheme())
+
 # Clean up penguins
 penguin <- penguins %>% 
   rename_with(str_remove_all, pattern = "_mm$|_g$") %>% 
@@ -115,7 +118,7 @@ anim <- plot +
   )
 
 # Animation output path
-anim_out <- here::here("assets", "img", "linear-regression-anim-001.gif")
+anim_out <- here::here("Rmd", "linear-regression", "images", "linear-regression-anim-001.gif")
 
 # Render
 gganimate::animate(
