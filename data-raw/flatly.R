@@ -23,7 +23,22 @@ flatly <- bind_rows(flatly)
 write_rds(flatly, file = "data/flatly.rds")
 
 # ggplot
-ggplot(flatly %>% mutate(name = factor(name, levels = flatly$name))) +
+palette_plot <- ggplot(
+  flatly %>% mutate(name = factor(name, levels = flatly$name))
+) +
   aes(x = name, ymin = 0, ymax = 1) +
   geom_linerange(col = flatly$value, size = 5) +
   coord_flip()
+
+palette_plot
+
+
+ragg::agg_png(
+  filename = here::here("inst", "flatly-palette.png"), 
+  width = 8, 
+  height = 8,
+  units = "in",
+  res = 100
+)
+palette_plot + theme_dark()
+dev.off()
