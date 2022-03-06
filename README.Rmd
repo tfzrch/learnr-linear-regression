@@ -1,0 +1,50 @@
+---
+title: 'Introduction to Linear Regression: Learnr Tutorial'
+output: github_document
+bibliography: "`r here::here('inst', 'packages.bib')`"
+---
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+```{r knitr, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE)
+```
+
+```{r setup, message = FALSE}
+library(here)
+```
+
+```{r packages-bib}
+knitr::write_bib(
+  x = c("palmerpenguins", "tidyverse", "learnr", "gganimate"), 
+  file = here::here("inst", "packages.bib")
+)
+```
+
+## Purpose
+
+This is a work-in-progress project to create an interactive tutorial on Linear
+Regression, focussing (mostly) on concepts rather than code, and taking a highly
+visual approach to showing how Linear Regression works.
+
+```{r linear-regression-gif, out.width='55%', fig.align='center'}
+gif <- "linear-regression-anim-001.gif"
+gif <- here("Rmd", "linear-regression", "images", gif)
+knitr::include_graphics(gif)
+```
+
+## Acknowledgements
+
+This project depends heavily on the Palmer Penguins dataset [@R-palmerpenguins]
+and the tidyverse suite [@R-tidyverse]. The tutorial is built with learnr 
+[@R-learnr] and animated visuals are built with gganimate [@R-gganimate].
+
+## License
+
+The code is licensed under [MIT]().
+
+Text, images, and other media are licensed, unless otherwise indicated, 
+under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## References
