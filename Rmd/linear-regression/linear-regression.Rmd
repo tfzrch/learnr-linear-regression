@@ -1,0 +1,28 @@
+---
+title: "Introduction to Linear Regression"
+output: 
+  learnr::tutorial:
+    theme: flatly
+    highlight: kate
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
+```
+
+```{scss}
+.caption {
+  font-size: 1.15rem;
+}
+```
+
+```{r child='_00-machine-learning-intro.Rmd'}
+```
+
+```{r child='_01-lr-purpose.Rmd'}
+```
+
+```{r child='_02-lr-visual.Rmd'}
+```
