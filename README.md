@@ -21,7 +21,8 @@ animated visuals are built with gganimate (Pedersen and Robinson 2020).
 
 ## License
 
-The code is licensed under [MIT]().
+The code is licensed under
+[MIT](https://github.com/tfzrch/learnr-linear-regression/blob/main/LICENSE).
 
 Text, images, and other media are licensed, unless otherwise indicated,
 under [Creative Commons Attribution-NonCommercial 4.0 International (CC

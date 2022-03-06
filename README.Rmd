@@ -42,7 +42,7 @@ and the tidyverse suite [@R-tidyverse]. The tutorial is built with learnr
 
 ## License
 
-The code is licensed under [MIT]().
+The code is licensed under [MIT](https://github.com/tfzrch/learnr-linear-regression/blob/main/LICENSE).
 
 Text, images, and other media are licensed, unless otherwise indicated, 
 under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
