@@ -1,0 +1,24 @@
+## Linear Regression - What is it for?
+
+Linear Regression is designed to predict the value of a numerical variable,
+using a predictor variable, which also needs to be numeric. In most cases,
+both will be continuous data.
+
+To start, let's think about how we'd visualise this problem.
+
+```{r linear-reg-scatter-quiz}
+lr_scatter_quiz_question <- c(
+  "Which type of plot is the most appropriate for showing the",
+  "relationship between two continous variables?"
+)
+
+quiz(
+  question(
+    paste(lr_scatter_quiz_question),
+    answer("Bar plot"),
+    answer("Histogram"),
+    answer("Radial plot"),
+    answer("Scatter plot", correct = TRUE)
+  )
+)
+```

@@ -1,0 +1,91 @@
+## Machine Learning
+
+Think of machine learning as the art of building a 'thing labeller'.
+
+The output of a machine learning project is a model. A model is just
+a tool that when given inputs describing a 'thing' (attributes), gives back a 
+'label' describing another attribute of that thing. These 'labels' can in fact 
+be any type of data, such as continuous numeric values, not just textual or 
+TRUE/FALSE categories.
+
+In other words, a model is a 'recipe' for creating outputs from inputs, just 
+like any function in any programming language.
+
+$$
+\color{#abe123}{Data} + \color{#abe123}{Recipe} \rightarrow \color{#1a99c1}{Label}
+$$
+
+### Make a Computer Write Your Recipe
+
+Using a model is functionally the same as using a function. The real work for 
+the data scientist in Machine Learning is building the model. Writing the 
+recipe.
+
+#### Traditional Programming
+
+So what distinguishes Machine Learning from just writing a new function? Let's 
+look at how we write a function:
+
+```{r function_example, eval=FALSE, echo=TRUE}
+add_two_sqrt <- function(x) {
+  sqrt(x + 2)
+}
+```
+
+What did I have to **know** about my output to write the recipe? Well, 
+everything. 
+
+I had to know that the output of this recipe will always be the square root of
+the input plus 2. I had to know that the addition has to happen before the
+square root. 
+
+To make this function more efficient, I could even add in some checks to make 
+sure the input is a number.
+
+```{r function_example_checks, eval=FALSE, echo=TRUE}
+add_two_sqrt <- function(x) {
+  
+  if (!is.numeric(x)) {
+    stop("Supply a number")
+  }
+  
+  sqrt(x + 2)
+}
+```
+
+To write new functions, the programmer has to know everything there is about the
+inputs it will receive and the output it will try to create from them, as the
+recipe should always either fail to run (because of bad input) or follow the
+recipe exactly to produce the same result for the same input.
+
+#### Machine Learning
+
+Machine Learning is for tasks where the recipe is not only unknown, but would be
+really hard to discover and write out in code.
+
+Instead of making the programmer do the hard work of discovering the recipe,
+we'll let a computer do it instead.
+
+We'll do this by giving the computer examples of input and outputs. If our
+recipe is a cake, we'll give it lots of examples of cakes and the ingredients
+needed to make them. The computer will then try to construct the recipe it needs
+to make a good cake, and will evaluate how it did on every attempt by comparing
+against the real cakes we gave it.
+
+To use another analogy, think about how a child learns what is food and what is
+not. Young children spend a lot of time putting things in their mouths, and they
+learn to identify food from the feedback they get. Things that taste bad and 
+can't be bitten are soon identified as 'not food'. Parents also provide feedback,
+quickly rushing to stop the child from eating something dangerous or unclean.
+Everything else, the child will learn to categories as 'food'.
+
+```{r machine-learning-quiz}
+quiz(
+  question(
+    "Which of these describes traditional progamming?",
+    answer("The programmer supplies Data and the Recipe.", correct = T),
+    answer("The programmer learns by examples"),
+    answer("The computer supplies the Recipe")
+  )
+)
+```
