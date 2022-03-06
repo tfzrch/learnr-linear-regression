@@ -79,7 +79,7 @@ subtitle <- paste(
 
 plot <- plot +
   geom_label(aes(x = label_x, y = label_y, label = label)) +
-  labs(x = "Flipper Length (mm)", y = "Body Mass (mm)") +
+  labs(x = "Flipper Length (mm)", y = "Body Mass (g)") +
   ggtitle(
     "Predicting Penguin Body Mass with Flipper Length", 
     subtitle = subtitle
