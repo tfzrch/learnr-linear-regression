@@ -10,7 +10,7 @@ This is a work-in-progress project to create an interactive tutorial on
 Linear Regression, focussing (mostly) on concepts rather than code, and
 taking a highly visual approach to showing how Linear Regression works.
 
-<img src="C:/Users/Thomas/Documents/projects/learnr-linear-regression/Rmd/linear-regression/images/linear-regression-anim-001.gif" width="55%" style="display: block; margin: auto;" />
+<img src="Rmd/linear-regression/images/linear-regression-anim-001.gif" width="55%" style="display: block; margin: auto;" />
 
 ## Acknowledgements
 

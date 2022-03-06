@@ -29,8 +29,7 @@ Regression, focussing (mostly) on concepts rather than code, and taking a highly
 visual approach to showing how Linear Regression works.
 
 ```{r linear-regression-gif, out.width='55%', fig.align='center'}
-gif <- "linear-regression-anim-001.gif"
-gif <- here("Rmd", "linear-regression", "images", gif)
+gif <- "Rmd/linear-regression/images/linear-regression-anim-001.gif"
 knitr::include_graphics(gif)
 ```
 
