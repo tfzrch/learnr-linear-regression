@@ -15,8 +15,8 @@ gen_pearson_demo <- function(seed = 101) {
   data <- tibble(
     x = seq(1, 30, by = 2), 
     perfect = seq(1, 30, by = 2), 
-    strong = perfect + 1*rnorm(15, sd = 6),
-    weak = perfect + 1 * rnorm(15, sd = 20),
+    strong = perfect + 1*rnorm(15, sd = 7.5),
+    weak = perfect + 1 * rnorm(15, sd = 25),
   )
   
   # Reshape to add negative equivalents
