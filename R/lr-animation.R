@@ -1,6 +1,8 @@
 # ------------------------------
 # linear-regression-anim-001.gif
 # ------------------------------
+# Show how predictions can be made from a LR by reading x > model > y on a
+# scatter plot
 
 # Source setup script
 source(here::here("R", "lr-animation-setup.R"))
