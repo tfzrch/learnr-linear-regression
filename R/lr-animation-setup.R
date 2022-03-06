@@ -12,7 +12,7 @@ set.seed(1021)
 # Source
 list.files(
   here::here("R"), 
-  pattern = "^src_|lr-animation-", 
+  pattern = "^src_|lr-animation-ggplot", 
   full.names = TRUE
 ) %>% 
   walk(source, .GlobalEnv)
