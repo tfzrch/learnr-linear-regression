@@ -33,6 +33,11 @@ gif <- "Rmd/linear-regression/images/linear-regression-anim-001.gif"
 knitr::include_graphics(gif)
 ```
 
+## Deployment
+
+This learnr tutorial will be deployed on shinyapps.io when in a more complete
+state. In the meantime, it can be run locally by cloning the git repository.
+
 ## Acknowledgements
 
 This project depends heavily on the Palmer Penguins dataset [@R-palmerpenguins]

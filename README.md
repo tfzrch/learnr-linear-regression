@@ -12,6 +12,12 @@ taking a highly visual approach to showing how Linear Regression works.
 
 <img src="Rmd/linear-regression/images/linear-regression-anim-001.gif" width="55%" style="display: block; margin: auto;" />
 
+## Deployment
+
+This learnr tutorial will be deployed on shinyapps.io when in a more
+complete state. In the meantime, it can be run locally by cloning the
+git repository.
+
 ## Acknowledgements
 
 This project depends heavily on the Palmer Penguins dataset (Horst,
